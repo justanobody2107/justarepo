@@ -3,6 +3,8 @@ A Cydia repository template. This template contains sample on how you can easily
 
 Most data for this repo is stored on XML files and are loaded on the depiction page dynamically. See the guide below on how to set it up. Note that this guide doesn't cover creating .deb files but will briefly cover assiging depictions.
 
+THIS REPO IS HOSTED AT https://repo.justanobody.me
+
 ### Side note: Everything below this is either for JustANobody2107's convenience, or people who want to make their own Cydia repos.
 
 ## How to use this template
