@@ -1,0 +1,35 @@
+<package>
+    <id>com.ramenrepo.limelight</id>
+    <name>Limelight</name>
+    <version>1.9.3</version>
+    <compatibility>
+        <firmware>
+            <miniOS>7.0</miniOS>
+            <maxiOS>13.0</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+        </firmware>
+    </compatibility>
+    <dependencies>Anemone</dependencies>
+    <descriptionlist>
+        <description>Colorful glyphs for anemone</description>
+        <longdescription><![CDATA[
+            · 600+ icons<br/>
+            · Regular + white glyphs<br/>
+            · Small + large badges<br/>
+            · Settings Icons<br/>
+            · Folder icon masks<br/>
+            · I recommend using a darker wallpaper<br/>
+            · Respring to fix the clock + badges<br/>
+            · Leave a tip if you'd like: <a href="paypal.me/tyios">paypal.me/tyios</a> :)<br/>
+        ]]></longdescription>
+    </descriptionlist>
+    <screenshots>
+        <screenshot>
+            <image>limelight-sample.png</image>
+        </screenshot>
+    </screenshots>
+    <changelog>
+        <change>Initial release</change>
+    </changelog>
+    <links></links>
+</package>

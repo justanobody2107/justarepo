@@ -1,0 +1,106 @@
+.disable-hover {
+    pointer-events: none;
+}
+
+.link-item {
+    list-style-type: none;
+    padding: 17px 15px;
+    display: block;
+    color: #111 !important;
+    text-align: left;
+}
+
+a {
+	color: #111;
+}
+
+.purp {
+	color: #664dff !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.light {
+	color: #696969 !important;
+}
+
+.jumbotron {
+	background-color: #fff;
+	padding-bottom: 5px;
+	padding-top: 20px;
+	padding-left: 0px !important;;
+	text-align: left;
+}
+
+.link-item:hover {
+    border: 1px solid #ddd;
+    background-color: #111;
+}
+
+html.can-touch .link-item:hover{ /* disable hover effect when input is touch */
+    background-color: #fff;
+}
+
+html.can-touch .link-item:active{ /* disable hover effect when input is touch */
+    background-color: #111;
+}
+
+.fa {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.packageHeader {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.page-header {
+	margin-top: 0px !important;
+}
+
+.panel-default {
+	border-color: #c2b8ff !important;
+	box-shadow: 0 0 12px 0px #7004ff20 !important;
+}
+
+.panel-heading {
+	border-color: #c2b8ff !important;
+	background-color: #eeebff ! important;
+}
+
+.subtitle {
+	font-size: 16px !important;
+	color: #696969;
+}
+
+.jumbotron {
+	margin-bottom: 0px !important;
+}
+
+#headerImage{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	border-radius: 10px !important;
+}
+
+
+.thumbnail {
+	border-radius: 10px !important;
+	overflow: hidden !important;
+	padding: 0px !important;
+	border: 0px !important;
+	height: 200px !important;
+	box-shadow: 0 3px 9px #00000066 !important;
+}
+
+.alert {
+	margin-top: 15px !important;
+}
+
+#packageName {
+	margin-top: 0px !important;
+}

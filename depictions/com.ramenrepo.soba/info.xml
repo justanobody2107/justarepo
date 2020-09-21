@@ -1,0 +1,32 @@
+<package>
+    <id>com.ramenrepo.soba</id>
+    <name>Soba</name>
+    <version>1.0</version>
+    <compatibility>
+        <firmware>
+            <miniOS>7.0</miniOS>
+            <maxiOS>13.0</maxiOS>
+            <otherVersions>unconfirmed</otherVersions>
+        </firmware>
+    </compatibility>
+    <dependencies>Alkaline</dependencies>
+    <descriptionlist>
+        <description>Battery + Cellular status icons for Alkaline</description>
+        <longdescription><![CDATA[
+            · (Alkaline is not compatible with iPhone X)<br/>
+            · 4 battery themes for Alkaline<br/>
+            · Cellular + wifi icons are themable through Anemone<br/>
+            · I recommend hiding carrier text<br/>
+            · Leave a tip if you'd like: <a href="paypal.me/tyios">paypal.me/tyios</a> :)<br/>
+        ]]></longdescription>
+    </descriptionlist>
+    <screenshots>
+        <screenshot>
+            <image>soba-sample.png</image>
+        </screenshot>
+    </screenshots>
+    <changelog>
+        <change>Initial release</change>
+    </changelog>
+    <links></links>
+</package>

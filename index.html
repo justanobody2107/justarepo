@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ramen Repo</title>
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="depictions/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="depictions/js/data-loader-engine.js"></script>
+  <style>
+    .jumbotron {
+    	margin-bottom: 0px !important;
+    }
+    .fa {
+    	color: #4736b1;
+  	}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123752025-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-123752025-1');
+  </script>
+
+
+</head>
+<body>
+
+	<div id="packageHeader" class="container">
+		<div class="jumbotron">
+			<h1>Ramen Repo 🍜</h1>
+			<p>a repository by <a href="http://www.reddit.com/u/ty_ph" class="purp">ty_ph</a></b><br></p>
+			<p class="subtitle"><a class="btn btn-sm btn-default purp" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://ramenrepo.github.io/">+ Add to Cydia</a>&nbsp;&nbsp;&nbsp;ramenrepo.github.io</p>
+		</div>		
+	</div>
+	
+<div class="container">
+
+	<h3 id="wells" class="page-header">Packages</h3>
+	<div class="panel panel-default">
+		<div class="panel-heading">Limelight <span class="purp">(free)</span></div>
+			<div class="panel-body">
+				colorful glyphs for anemone.<br /><br />
+				<a class="btn btn-xs btn-default" href="depictions/?p=com.ramenrepo.limelight">See package</a>
+			</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">Soba <span class="purp">(free)</span></div>
+			<div class="panel-body">
+				circular status bar icons for Alkaline/Anemone.<br /><br />
+				<a class="btn btn-xs btn-default" href="depictions/?p=com.ramenrepo.soba">See package</a>
+			</div>
+	</div>
+
+	<script type="text/javascript">
+	   function setAnchorTargets() {
+		 // if on Cydia, set link targets to _blank
+		 if (navigator.userAgent.search(/Cydia/) != -1) {
+		   $("a").each(function() {
+			 $(this).attr("target","_blank");
+		   });
+		 }
+	   }
+
+		var repoContents =  {
+			"#repoFooterLinks" :
+				{"type":"custom"
+					,"source":"repo>footerlinks>link"
+					,"render":function(element,source) {
+						$.each(source, function(index,data) {
+							var a = $("<a class='link-item list-group-item'>");
+							a.attr("href",$(data).find('url').text());
+							if ($(data).find('iconclass')) {
+								var i =  $("<span>")
+								i.attr("class",$(data).find('iconclass').text());
+								console.log(i);
+								$(a).append(i);
+							}
+							$(a).append($(data).find('name').text());
+							$(element).append(a);
+						}); //each
+					} //render
+				}
+		}
+		$( document ).ready(function() {
+			$.ajax({type: "GET", dataType: "xml",url : ("../repo.xml"),cache: false,
+				success : function(xml){
+						  data_loader_engine(repoContents,xml);
+				  setAnchorTargets();
+					  },
+				error: function() {
+				  $("#contactInfo").hide();
+				  setAnchorTargets();
+				}
+			}); //ajax
+
+
+		}); // ready
+
+	</script>
+	
+	
+	<h3 id="wells" class="page-header">Links</h3>
+	</div>
+
+	<div id="contactInfo">
+		<div class="container">
+			<ul class="list-group" id="repoFooterLinks">
+			</ul>
+		<br>
+		</div>
+		</div>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

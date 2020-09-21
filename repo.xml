@@ -1,0 +1,24 @@
+<repo>
+	<footerlinks>
+		<link>
+			<name>ty_ios</name>
+			<url>http://twitter.com/ty_ios</url>
+			<iconclass>fa fa-twitter</iconclass>
+		</link>
+		<link>
+			<name>ty_ph</name>
+            <url>http://reddit.com/u/ty_ph</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+        <link>
+            <name>Paypal</name>
+            <url>http://paypal.me/tyiOS</url>
+            <iconclass>fa fa-paypal</iconclass>
+        </link>
+        <link>
+            <name>Bitcoin</name>
+            <url>https://www.blockchain.com/btc/address/14kfN42H8qr47VcrtRH4CRHh6CmDWk6RY5</url>
+            <iconclass>fa fa-btc</iconclass>
+        </link>
+	</footerlinks>
+</repo>
